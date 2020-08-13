@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image upload</title>
+</head>
+<body>
+    <form action="{% url 'dp15app:imgdisplay' %}" method="POST" enctype="multipart/form-data" align="center">
+        {% csrf_token %}
+    Image1:<input type="file" name="immg" value="img1">
+    <input type="submit" value="submit">
+    </form>   
+</body>
+</html>
